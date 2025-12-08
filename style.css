@@ -155,3 +155,20 @@ a [href="#development"]{
 .color-change{
   background-color: var(--highlight-secondary);
 }
+
+/* 7************************* */
+
+.rotate-the{
+  animation-name: theRotate;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+}
+
+@keyframes theRotate{
+  0%{
+    rotate: 0turn;
+  }
+  100%{
+    rotate: 1turn;
+  }
+}

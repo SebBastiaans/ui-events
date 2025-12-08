@@ -81,3 +81,12 @@ let textChangeLink = document.querySelector('a[href="#fix"]')
 textChangeLink.addEventListener('mouseover', function(){
   textChangeLink.textContent = 'hoi'
 })
+
+//7----------------------------
+let rotateTheLink = document.querySelector('a[href="#the"]')
+console.log(rotateTheLink)
+
+rotateTheLink.addEventListener('mouseout', function(){
+  rotateTheLink.classList.add('rotate-the')
+})
+

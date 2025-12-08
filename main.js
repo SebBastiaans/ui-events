@@ -50,11 +50,18 @@ let translateLink = document.querySelector('a[href="#and"]')
 
 translateLink.addEventListener('click', function(){
   translateLink.classList.add('translate')
-  console.log(translateLink)
 })
 
 translateLink.addEventListener('animationend', function(){
   translateLink.classList.remove('translate')
 })
 
+//4---------------------------
 
+let shakeLink = document.querySelector('a[href="#development"]')
+
+
+shakeLink.addEventListener('dblclick', function(){
+  shakeLink.classList.add('shake')
+  console.log(shakeLink)
+})

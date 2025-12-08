@@ -73,3 +73,11 @@ let colorChangeLink = document.querySelector('a[href="#sprint-5"]')
 colorChangeLink.addEventListener('focus', function(){
   colorChangeLink.classList.add('color-change')
 })
+
+//6-----------------------------
+
+let textChangeLink = document.querySelector('a[href="#fix"]')
+
+textChangeLink.addEventListener('mouseover', function(){
+  textChangeLink.textContent = 'hoi'
+})

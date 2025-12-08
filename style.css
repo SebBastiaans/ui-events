@@ -193,3 +193,10 @@ a [href="#development"]{
   animation-duration: 1s;
   animation-direction: reverse;
 }
+
+/* 9**************************** */
+
+.user{
+  background-color: var(--highlight-secondary);
+  color: violet;
+}

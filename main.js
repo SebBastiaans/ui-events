@@ -103,3 +103,13 @@ flipFlow.addEventListener('mouseup', function(){
 flipFlow.addEventListener('animationend', function(){
   flipFlow.classList.remove('flip-flow', 'flip-flow-reverse')
 })
+
+//9------------------------------
+
+let userKey = document.querySelector('a[href="#user"]')
+
+userKey.addEventListener('keyup', function(event){
+  if (event.key === 's'){
+    userKey.classList.toggle('user')
+  }
+})

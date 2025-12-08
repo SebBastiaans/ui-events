@@ -135,7 +135,22 @@ balloonPop.addEventListener('animationend', function(){
   balloonPop.classList.remove('balloon-deflate')
 })
 
+//11---------------------------------
 
+// let wheelScroll = document.querySelector('a[href="#events"]');
+
+// wheelScroll.addEventListener('wheel', function (Y) {
+//   wheelScroll.style.setProperty("--font", Y.deltaY + "px");
+// });
+
+//12---------------------------------
+
+let mouse = document.querySelector('a[href="#interaction"]');
+
+mouse.addEventListener("mousemove", function (move) {
+  mouse.style.setProperty("--y", move.offsetY + "px");
+  mouse.style.setProperty("--x", move.offsetX + "px");
+});
 
 
 

@@ -232,3 +232,20 @@ a [href="#development"]{
   animation-iteration-count: 1;
   animation-duration: .2s;
 }
+
+/* 11****************************** */
+
+/* a[href="#events"]{
+  --font:1em;
+
+  font-size: var(--font);
+} */
+
+/* 12******************************** */
+
+a[href="#interaction"]:hover{
+  --y:100px;
+  --x:100px;
+  color: var(--primary);
+  background: radial-gradient(at var(--x) var(--y), var(--highlight-primary) 5%, var(--highlight-secondary)20%)
+}

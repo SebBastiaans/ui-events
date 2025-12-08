@@ -113,3 +113,29 @@ userKey.addEventListener('keyup', function(event){
     userKey.classList.toggle('user')
   }
 })
+
+//10-------------------------------
+
+let balloonPop = document.querySelector('a[href="#interface"]');
+
+balloonPop.addEventListener('keydown', function (event) {
+  if (event.key === 'b'){
+    balloonPop.classList.add('balloon')
+  }
+});
+
+balloonPop.addEventListener('keyup', function(event){
+  if (event.key === 'b'){
+    balloonPop.classList.remove('balloon')
+    balloonPop.classList.add('balloon-deflate')
+  }
+})
+
+balloonPop.addEventListener('animationend', function(){
+  balloonPop.classList.remove('balloon-deflate')
+})
+
+
+
+
+

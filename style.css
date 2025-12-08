@@ -200,3 +200,35 @@ a [href="#development"]{
   background-color: var(--highlight-secondary);
   color: violet;
 }
+
+/* 10**************************** */
+@keyframes balloon{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(3);
+  }
+}
+
+@keyframes deflate{
+  0%{
+    transform: scale(3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.balloon{
+  animation-name: balloon;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.balloon-deflate{
+  animation-name: deflate;
+  animation-iteration-count: 1;
+  animation-duration: .2s;
+}

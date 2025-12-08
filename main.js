@@ -84,9 +84,22 @@ textChangeLink.addEventListener('mouseover', function(){
 
 //7----------------------------
 let rotateTheLink = document.querySelector('a[href="#the"]')
-console.log(rotateTheLink)
 
 rotateTheLink.addEventListener('mouseout', function(){
   rotateTheLink.classList.add('rotate-the')
 })
 
+//8-----------------------------
+let flipFlow = document.querySelector('a[href="#flow"]')
+
+flipFlow.addEventListener('mousedown', function(){
+  flipFlow.classList.add('flip-flow')
+})
+
+flipFlow.addEventListener('mouseup', function(){
+  flipFlow.classList.add('flip-flow-reverse')
+})
+
+flipFlow.addEventListener('animationend', function(){
+  flipFlow.classList.remove('flip-flow', 'flip-flow-reverse')
+})

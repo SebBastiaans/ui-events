@@ -65,3 +65,11 @@ shakeLink.addEventListener('dblclick', function(){
   shakeLink.classList.add('shake')
   console.log(shakeLink)
 })
+
+//5---------------------------------
+
+let colorChangeLink = document.querySelector('a[href="#sprint-5"]')
+
+colorChangeLink.addEventListener('focus', function(){
+  colorChangeLink.classList.add('color-change')
+})

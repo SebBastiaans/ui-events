@@ -33,3 +33,12 @@ designLink.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // scaleLink.classList.toggle...
+
+let scaleLink = document.querySelector('a[href="#frontend"]')
+
+scaleLink.addEventListener('click', function(){
+  scaleLink.classList.add('scale')
+})
+scaleLink.addEventListener('animationend', function(){
+  scaleLink.classList.remove('scale')
+})

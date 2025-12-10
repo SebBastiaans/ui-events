@@ -137,11 +137,25 @@ balloonPop.addEventListener('animationend', function(){
 
 //11---------------------------------
 
-// let wheelScroll = document.querySelector('a[href="#events"]');
+let wheelScroll = document.querySelector('a[href="#events"]');
 
-// wheelScroll.addEventListener('wheel', function (Y) {
-//   wheelScroll.style.setProperty("--font", Y.deltaY + "px");
-// });
+let currentHeight = 40;
+
+wheelScroll.addEventListener('wheel', (event) =>{
+  event.preventDefault()
+
+  if (event.deltaY > 0){
+    currentHeight--;
+  }
+  else{
+    currentHeight++;
+  }
+
+  if (currentHeight < 10) currentHeight = 10;
+  if (currentHeight > 100) currentHeight = 100;
+
+  wheelScroll.style.fontSize = currentHeight + 'px'
+})
 
 //12---------------------------------
 
